@@ -17,7 +17,7 @@ export default function FirestoreContext (props){
         setClients(lstUsers)
     }
     const deleteClients = async (id) => {
-    const clientsDoc = doc(db, "products", id)
+    const clientsDoc = doc(db, "misClientes", id)
     await deleteDoc (clientsDoc)
     getClients()
     }
